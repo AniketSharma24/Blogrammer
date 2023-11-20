@@ -154,12 +154,7 @@ const blogsCards = [
 ];
 
 // Setting the blogs into local storage to make it available across the application
-if (
-  JSON.parse(localStorage.getItem("blogs")) &&
-  !JSON.parse(localStorage.getItem("blogs")).length
-) {
-  localStorage.setItem("blogs", JSON.stringify(blogsCards));
-}
+localStorage.setItem("blogs", JSON.stringify(blogsCards));
 
 const blogListContainer = document.getElementById("blogList");
 const popularBlogListContainer = document.getElementById("popularBlogList");
