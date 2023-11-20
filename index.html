@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Blogrammer - Home</title>
+  </head>
+  <body>
+    <!-- Navbar for navigation -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand" href="index.html">Blogrammer</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="about.html"
+                >About</a
+              >
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="landing-page-main px-5 my-5">
+      <article class="w-65">
+        <!-- Blog main card section -->
+        <section class="card mb-3 hero-card">
+          <div class="card-body">
+            <h5 class="card-title fs-2">Blogrammer</h5>
+            <p class="card-text">
+              Unleashing the Web: Where Tech Meets Words – Dive into a World of
+              Insightful Blogs on Cutting-Edge Web Technologies!
+            </p>
+            <a href="#blogList" class="btn btn-explore">Explore more</a>
+          </div>
+        </section>
+
+        <!-- Trending Blogs Section -->
+        <section class="mb-3">
+          <h2 class="p-3 blog-list-header fs-5 mb-3">Latest Posts</h2>
+          <div id="blogList" class="d-flex justify-space-between"></div>
+        </section>
+      </article>
+
+      <aside>
+        <h2 class="p-3 blog-list-header fs-5 mb-3">Popular Posts</h2>
+        <div id="popularBlogList"></div>
+      </aside>
+    </main>
+
+    <!-- Script files for making navbar expandable and collapsible -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

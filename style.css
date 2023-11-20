@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #007d6e !important;
+}
+.nav-link,
+.navbar-brand {
+  color: #fff !important;
+}
+
+.landing-page-main {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.landing-page-main article {
+  flex-basis: 65%;
+}
+
+.landing-page-main aside > * {
+  width: 100%;
+}
+
+.landing-page-main aside {
+  flex-basis: 34%;
+}
+
+.hero-card {
+  padding-top: 10em;
+  padding-bottom: 2em;
+  background-image: url("./assets/brand-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 40%;
+  color: #fff !important;
+  box-shadow: 1px 1px 201px 100px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 1px 1px 201px 100px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 1px 1px 201px 100px rgba(0, 0, 0, 0.75) inset;
+}
+
+.btn-explore {
+  background-color: #005e53;
+  color: #fff !important;
+}
+
+.btn-explore:hover {
+  background-color: #01473e;
+}
+
+.blog-list-header {
+  background-color: #005e53;
+  font-weight: 300;
+  color: #fff;
+  border-radius: 6px;
+}
+
+#blogList {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  width: 48%;
+  min-width: 400px;
+}
+
+.blog-banner {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-detail-text {
+  color: #636e72;
+}
+
+/* For blog-post.html */
+
+.blog-content,
+.about-section,
+.contact-section {
+  width: 60%;
+}
+
+.blog-image {
+  width: 100%;
+  aspect-ratio: 12 / 5;
+  object-fit: cover;
+}
+
+.error {
+  color: red;
+}
+
+.blog-info-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #636e72;
+}
+
+#popularBlogList {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.popular-blog-card {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.popular-blog-banner {
+  width: 150px;
+}
+
+.popular-blog-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  .landing-page-main main {
+    flex-direction: column;
+  }
+
+  .landing-page-main article {
+    flex-basis: 100%;
+  }
+
+  .landing-page-main aside {
+    flex-basis: 100%;
+  }
+
+  .blog-card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .blog-card {
+    width: 100%;
+  }
+}
