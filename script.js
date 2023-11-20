@@ -2,9 +2,10 @@
 const blogsCards = [
   {
     blogId: 1,
-    clickCount: 0,
     fullContent: {
       title: "Unlocking JavaScript Brilliance: A Journey into ES6 Wonders",
+      imgSrc:
+        "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
       description:
         "Explore the power and elegance of ECMAScript 6 (ES6) in this comprehensive guide. From arrow functions to classes, dive into the features that make ES6 a must-know for modern JavaScript developers. Upgrade your coding experience and embark on a journey through the enhanced capabilities of ES6!",
       content: [
@@ -39,6 +40,8 @@ const blogsCards = [
     },
     shortContent: {
       title: "Unlocking JavaScript Brilliance: A Journey into ES6 Wonders",
+      imgSrc:
+        "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8fDA%3D",
       author: "Aniket Sharma",
       datePosted: new Date(),
       description:
@@ -47,9 +50,10 @@ const blogsCards = [
   },
   {
     blogId: 2,
-    clickCount: 0,
     fullContent: {
       title: "Navigating with Inclusivity: A Guide to Web Accessibility",
+      imgSrc:
+        "https://ciracollege.com/wp-content/uploads/2020/11/emile-perron-xrVDYZRGdw4-unsplash-scaled.jpg",
       description:
         "Delve into the world of web accessibility and discover how to make your websites universally welcoming. From semantic HTML to keyboard navigation, uncover the principles that ensure an inclusive online experience for users of all abilities. Let's build a web that embraces diversity and inclusion!",
       content: [
@@ -84,6 +88,8 @@ const blogsCards = [
     },
     shortContent: {
       title: "Navigating with Inclusivity: A Guide to Web Accessibility",
+      imgSrc:
+        "https://ciracollege.com/wp-content/uploads/2020/11/emile-perron-xrVDYZRGdw4-unsplash-scaled.jpg",
       author: "Aniket Sharma",
       datePosted: new Date(),
       description:
@@ -92,9 +98,9 @@ const blogsCards = [
   },
   {
     blogId: 3,
-    clickCount: 0,
     fullContent: {
       title: "Unleashing the Power of HTML5: A Comprehensive Guide",
+      imgSrc: "https://technext.github.io/bizze/images/blog-img-1.png",
       description:
         "HTML5, the fifth and latest version of the Hypertext Markup Language, has revolutionized web development by introducing powerful features and capabilities. In this comprehensive guide, we'll explore the key aspects of HTML5 and how it empowers developers to create modern, interactive, and dynamic web experiences. 🚀✨",
       content: [
@@ -146,9 +152,64 @@ const blogsCards = [
     shortContent: {
       title: "Unleashing the Power of HTML5: A Comprehensive Guide",
       author: "Aniket Sharma",
+      imgSrc: "https://technext.github.io/bizze/images/blog-img-1.png",
       datePosted: new Date(),
       description:
         "Discover the transformative capabilities of HTML5! From semantic elements to multimedia support and local storage, explore the features that make HTML5 the driving force behind modern web development. Embrace the power of HTML5 and unlock the full potential of the web. Happy coding!",
+    },
+  },
+  {
+    blogId: 4,
+    fullContent: {
+      title: "Mastering Good Coding Practices in JavaScript",
+      imgSrc:
+        "https://i.pinimg.com/originals/7a/fb/04/7afb0491c91b2f9e9aac56667c3be677.jpg",
+      description:
+        "Learn and apply essential coding practices to write clean, maintainable, and efficient JavaScript code. Elevate your development skills by following these best practices for a smoother coding experience.",
+      content: [
+        {
+          heading: "Use Meaningful Variable and Function Names",
+          content:
+            "Choose descriptive names for variables and functions that accurately convey their purpose. This enhances code readability and makes it easier for others (and future you) to understand your code.",
+        },
+        {
+          heading: "Follow Consistent Code Formatting",
+          content:
+            "Consistent formatting improves code readability and maintainability. Adopt a coding style guide and stick to it. Tools like ESLint can help enforce coding standards in your project.",
+        },
+        {
+          heading: "Avoid Global Variables",
+          content:
+            "Minimize the use of global variables to prevent unintended variable collisions and side effects. Embrace modularization and use local scopes to encapsulate your code.",
+        },
+        {
+          heading: "Always Use Strict Mode",
+          content:
+            "Enable strict mode at the beginning of your scripts ('use strict'). Strict mode helps catch common coding errors, improves security, and promotes safer coding practices.",
+        },
+        {
+          heading: "Handle Errors Gracefully",
+          content:
+            "Implement proper error handling to prevent crashes and provide meaningful feedback to users. Use try-catch blocks for critical sections of code and handle exceptions appropriately.",
+        },
+        {
+          heading: "Optimize Loops and Iterations",
+          content:
+            "Optimize loops for better performance. Minimize unnecessary computations inside loops, and consider using array methods like 'forEach', 'map', 'filter', and 'reduce' for improved readability and efficiency.",
+        },
+      ],
+      conclusion: "Conclusion",
+      conclusionDesc:
+        "Adhering to good coding practices not only improves the quality of your code but also enhances collaboration and maintainability. Strive for clarity, consistency, and efficiency in your JavaScript projects.",
+    },
+    shortContent: {
+      title: "Mastering Good Coding Practices in JavaScript",
+      imgSrc:
+        "https://i.pinimg.com/originals/7a/fb/04/7afb0491c91b2f9e9aac56667c3be677.jpg",
+      author: "Aniket Sharma",
+      datePosted: new Date(),
+      description:
+        "Learn and apply essential coding practices to write clean, maintainable, and efficient JavaScript code. Elevate your development skills by following these best practices for a smoother coding experience.",
     },
   },
 ];
@@ -169,7 +230,7 @@ function generateBlogCard() {
     div.classList.add("blog-card", "p-4", "shadow-sm");
 
     const cardBanner = document.createElement("img");
-    cardBanner.src = "https://technext.github.io/bizze/images/blog-img-1.png";
+    cardBanner.src = blog.shortContent.imgSrc;
     cardBanner.classList.add("blog-banner", "mb-2");
 
     const cardTitle = document.createElement("h2");
@@ -213,27 +274,28 @@ function generatePopularBlogCard() {
   for (let blog of blogsCards) {
     const popularBlogCardLink = document.createElement("a");
     popularBlogCardLink.classList.add("popular-blog-card", "p-4", "shadow-sm");
+    popularBlogCardLink.id = "popularBlogCard";
 
     const cardBanner = document.createElement("img");
-    cardBanner.src = "https://technext.github.io/bizze/images/blog-img-1.png";
+    cardBanner.src = blog.shortContent.imgSrc;
     cardBanner.classList.add("popular-blog-banner");
 
     const contentDiv = document.createElement("div");
     contentDiv.classList.add("popular-blog-content");
 
-    const cardTitle = document.createElement("h3");
-    cardTitle.classList.add("card-title", "fs-5", "mb-2");
+    const cardTitle = document.createElement("h5");
+    cardTitle.classList.add("card-title", "mb-2");
     cardTitle.innerHTML = `${blog.shortContent.title}`;
 
     const popularBlogDetails = document.createElement("div");
     popularBlogDetails.classList.add("popular-blog-details");
 
     const cardAuthor = document.createElement("span");
-    cardAuthor.classList.add("mb-2", "card-detail-text");
+    cardAuthor.classList.add("mb-2", "fs-6", "card-detail-text");
     cardAuthor.innerHTML = `By: ${blog.shortContent.author}`;
 
     const cardUploadDate = document.createElement("span");
-    cardUploadDate.classList.add("mb-2", "card-detail-text");
+    cardUploadDate.classList.add("mb-2", "fs-6", "card-detail-text");
     cardUploadDate.innerHTML = `Uploaded On: ${blog.shortContent.datePosted.getDate()}-${
       blog.shortContent.datePosted.getMonth() + 1
     }-${blog.shortContent.datePosted.getFullYear()}`;
@@ -259,6 +321,13 @@ const readMoreButtons = document.querySelectorAll("#readMore");
 readMoreButtons.forEach((readMore) => {
   readMore.addEventListener("click", function () {
     setActiveBlog(readMore.dataset.blogid);
+  });
+});
+
+const popularBlogCards = document.querySelectorAll("#popularBlogCard");
+popularBlogCards.forEach((popularBlogCard) => {
+  popularBlogCard.addEventListener("click", function () {
+    setActiveBlog(popularBlogCard.dataset.blogid);
   });
 });
 

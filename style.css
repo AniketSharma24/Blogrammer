@@ -131,7 +131,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .landing-page-main main {
     flex-direction: column;
   }
@@ -147,10 +147,20 @@
   .blog-card {
     width: 100%;
   }
+
+  #popularBlogList {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #popularBlogCard {
+    width: 45%;
+  }
 }
 
-@media screen and (max-width: 1400px) {
-  .blog-card {
+@media screen and (max-width: 1200px) {
+  #popularBlogCard {
     width: 100%;
   }
 }

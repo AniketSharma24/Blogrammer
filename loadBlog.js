@@ -50,7 +50,7 @@ function createBlog(blog) {
 
   //   For blog banner image
   const bannerImg = document.createElement("img");
-  bannerImg.src = "https://technext.github.io/bizze/images/blog-img-1.png";
+  bannerImg.src = blog.fullContent.imgSrc;
   bannerImg.classList.add("blog-image", "my-4");
 
   blogContainer.appendChild(bannerImg);
@@ -63,7 +63,7 @@ function createBlog(blog) {
 
   //   For blog contents
   blog.fullContent.content.forEach((section) => {
-    const heading = document.createElement("h3");
+    const heading = document.createElement("h4");
     heading.innerHTML = section.heading;
 
     const content = document.createElement("p");
