@@ -44,5 +44,20 @@ To run Blogrammer locally, follow these steps:
 - Navigate to the contact page to stay connected.
 
 
+## Screenshots
+
+--- Blogrammer home page displaying a list of blogs.
+<img width="1680" alt="Screenshot 2023-11-20 at 6 55 41 PM" src="https://github.com/AniketSharma24/Blogrammer/assets/43120341/d8304ff6-138e-453a-aacf-3f49753272cf">
+
+--- Full content of a blog displayed on a new page.
+<img width="1680" alt="Screenshot 2023-11-20 at 6 56 04 PM" src="https://github.com/AniketSharma24/Blogrammer/assets/43120341/075ccd84-a0ec-4b45-bd7f-8fcab987bc1f">
+
+--- Blogrammer About Page
+<img width="1680" alt="Screenshot 2023-11-20 at 6 56 21 PM" src="https://github.com/AniketSharma24/Blogrammer/assets/43120341/a00fda34-3acd-41bc-98fb-89bf7f374341">
+
+
+
+
+
 
 
