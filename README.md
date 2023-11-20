@@ -1,6 +1,6 @@
 # Blogrammer
 
-Blogrammer is a simple blogging website developed using HTML, CSS, and JavaScript. It allows users to explore various blogs and view the full content of a blog by clicking on it. The website also features home and about sections for additional information.
+Blogrammer is a simple blogging website developed using HTML, CSS, and JavaScript. It allows users to explore various blogs and view the full content of a blog by clicking on it. The website also features home and about sections for additional information. [Link to the website](https://aniket-blogrammer.netlify.app/)
 
 ## Table of Contents
 
